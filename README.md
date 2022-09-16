@@ -12,7 +12,7 @@ Some quick testing on PC only. Connection to MACs works as well but not tested i
 
 Basically you can use any ESP32 and any radio that supports SBUS.
 
-The code very simple because the used libraries are easy to use. I encountered some problems with the SBUS library but added a workaround (see comments in the code if you are intereseted)
+The code is very simple because the used libraries are easy to use and there is not much to do. I encountered some problems with the SBUS library but added a workaround (see comments in the code if you are intereseted)
 
 Note: I did not test any latency or input lags because everything depends on the BLE game pad / nimble libraries!
 
