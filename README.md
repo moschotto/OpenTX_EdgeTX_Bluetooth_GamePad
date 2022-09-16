@@ -88,5 +88,5 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 - 1 x schottky-diode or signal-diode, power-diode
 
 ### Printable case / housing:
-
+https://www.thingiverse.com/thing:5515977
 
