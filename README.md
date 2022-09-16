@@ -22,7 +22,7 @@ Note: I did not test any latency or input lags because everything depends on the
 ![Alt text](https://github.com/moschotto/OpenTX_EdgeTX_Bluetooth_GamePad/blob/main/Media/wiring-diagram.png)
 
 - The LED is optional
-- According to the getting started guide <a href="https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/">click here</a>, i added a schottkey diode to the 5V input
+- According to the getting started guide <a href="https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/">click here</a>, i added a schottky diode to the 5V input of the ESP32. In case that the module is powered by the radio and you plug in USB-c in parallel, the voltage/current can't flow back to the external voltage regulator
 - The SBUS input (RX input / yellow) can be any GPIO pin. Adjust the code aacordingly -> "define RX_PIN 20"
 
 ### Install / uploading the code:
