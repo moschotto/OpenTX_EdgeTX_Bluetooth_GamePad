@@ -75,6 +75,14 @@ build_flags =
                 -DARDUINO_USB_MODE=1
 
 ```
+### Radio setup:
+
+Input setup (Radiomaster Zorrow). Feel free to try out other radios as well
+
+![Alt text](https://github.com/moschotto/OpenTX_EdgeTX_Bluetooth_GamePad/blob/main/Media/SBUS.png)
+![Alt text](https://github.com/moschotto/OpenTX_EdgeTX_Bluetooth_GamePad/blob/main/Media/Mixer1.png)
+![Alt text](https://github.com/moschotto/OpenTX_EdgeTX_Bluetooth_GamePad/blob/main/Media/Mixer2.png)
+
 
 ### Demo
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=TKDMgXqkkfQ" target="_blank"><img src="http://img.youtube.com/vi/TKDMgXqkkfQ/0.jpg" 
