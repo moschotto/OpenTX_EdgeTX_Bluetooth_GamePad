@@ -14,6 +14,8 @@ Basically you can use any ESP32 and any radio that supports SBUS.
 
 The code very simple because the used libraries are easy to use. I encountered some problems with the SBUS library but added a workaround (see comments in the code if you are intereseted)
 
+Note: I did not test any latency or input lags because everything depends on the BLE game pad / nimble libraries!
+
 
 ### Wiring:
 
@@ -39,7 +41,7 @@ After that you should be able to upload the code.
 
 If you have the right settings in platform.io, you don't need to put the ESP32C3 into bootloader mode manually.
 
-Espressif32 version 5.1.1 this works for me.
+Espressif32 version 5.1.1 works for me.
 
 adjust the "uploads section" in the boards file for the ESP32C3 accordingly (usb_reset):
 
