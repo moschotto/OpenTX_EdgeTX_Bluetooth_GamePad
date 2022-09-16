@@ -6,8 +6,6 @@ GITHUB: https://github.com/moschotto?tab=repositories
 
 ![Alt text](https://github.com/moschotto/OpenTX_EdgeTX_Bluetooth_GamePad/blob/main/Media/front.png)
 
-
-
 EdgeTX/OpenTX bluetooth GamePad module based on ESP32 that decodes SBUS frames... 
 Some quick testing on PC only. Connection to MACs works as well but not tested in-game
 
@@ -38,7 +36,7 @@ After that you should be able to upload the code.
 
 #### Platform.io
 
-If you have the right settings for platform.io, you don't need to put the ESP32C3 into bootloader mode manually.
+If you have the right settings in platform.io, you don't need to put the ESP32C3 into bootloader mode manually.
 
 Espressif32 version 5.1.1 this works for me.
 
@@ -76,5 +74,19 @@ build_flags =
                 -DARDUINO_USB_MODE=1
 
 ```
+
+### Demo
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=TKDMgXqkkfQ" target="_blank"><img src="http://img.youtube.com/vi/TKDMgXqkkfQ/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+
+
+### Parts used:
+
+- 1 x Seeed Studio XIAO ESP32C3
+- 1 x Ams1117 5.0V voltage regulator 
+- 1 x 8 pin 2.54mm female pin headers
+- 1 x schottky-diode or signal-diode, power-diode
+
+### Printable case / housing:
 
 
