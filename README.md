@@ -92,3 +92,4 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 i.e. for RADIOMASTER Zorrow  
 https://www.thingiverse.com/thing:5515977
 
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fmoschotto%2FOpenTX_EdgeTX_Bluetooth_GamePad&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
