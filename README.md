@@ -5,6 +5,7 @@ License GPLv2: http://www.gnu.org/licenses/gpl-2.0.html
 GITHUB: https://github.com/moschotto?tab=repositories 
 
 ![Alt text](https://github.com/moschotto/OpenTX_EdgeTX_Bluetooth_GamePad/blob/main/Media/front.png)
+![Alt text](https://github.com/moschotto/OpenTX_EdgeTX_Bluetooth_GamePad/blob/main/Media/IMG_0454.jpg)
 
 EdgeTX/OpenTX bluetooth GamePad module based on ESP32 that decodes SBUS frames... 
 Some quick testing on PC only. Connection to MACs works as well but not tested in-game
