@@ -90,6 +90,17 @@ Input setup (Radiomaster Zorrow). Feel free to try out other radios as well
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=TKDMgXqkkfQ" target="_blank"><img src="http://img.youtube.com/vi/TKDMgXqkkfQ/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
+### Libraries:
+
+Check out and download/install these libraries (thanks to the contributors)
+|-- Bolder Flight Systems SBUS @ 7.0.0
+|-- Adafruit NeoPixel @ 1.10.5
+|-- ESP32-BLE-Gamepad @ 0.5.0
+|   |-- NimBLE-Arduino @ 1.4.0
+https://www.arduino.cc/reference/en/libraries/bolder-flight-systems-sbus/
+https://github.com/adafruit/Adafruit_NeoPixel
+https://github.com/lemmingDev/ESP32-BLE-Gamepad
+https://github.com/h2zero/NimBLE-Arduino
 
 ### Parts used:
 
