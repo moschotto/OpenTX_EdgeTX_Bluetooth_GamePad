@@ -16,6 +16,23 @@ The code is very simple because the used libraries are easy to use and there is 
 
 Note: I did not test any latency or input lags because everything depends on the BLE game pad / nimble libraries!
 
+### Limitation:
+
+it seems that the ESP32C3 is only able to "bond/pair" to ONE device and store the connection settings for this single device. If you connect to let's say a PC and later on you connect to another device, then the ESP32 gets stuck in during the bluetooth init phase. this seems to be an issue related to the NIMBLE bluetooth stack. this means you need to unpair/delete/forget the device BEFORE you connect it to another device. 
+
+#### how to recover:
+if the device get stuck and doesn't boot, you need to "erase the flash" and reflash it via arduino or platform.io again:
+
+```
+erase flash:
+python.exe esptool.py --chip esp32c3 --port COM14 --before usb_reset --after hard_reset erase_flash
+
+to avoid reflashing, you can limit the maximum allowed bonds to 1 
+
+
+=> NimBLE-Arduino\src\nimconfig.h
+CONFIG_BT_NIMBLE_MAX_BONDS 1
+```
 
 ### Wiring:
 
