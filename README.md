@@ -10,7 +10,7 @@ GITHUB: https://github.com/moschotto?tab=repositories
 EdgeTX/OpenTX bluetooth GamePad module based on ESP32 that decodes SBUS frames... 
 Some quick testing on PC only. Connection to MACs works as well but not tested in-game
 
-Basically you can use any ESP32 and any radio that supports SBUS.
+Basically you can use any ESP32 and any radio that outputs SBUS and support the mentioned libraries down below.
 
 The code is very simple because the used libraries are easy to use and there is not much to do. I encountered some problems with the SBUS library but added a workaround (see comments in the code if you are intereseted)
 
