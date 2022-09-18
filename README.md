@@ -95,15 +95,17 @@ Check out and download/install these libraries (thanks to the contributors)
 
 ```
 |-- Bolder Flight Systems SBUS @ 7.0.0
-|-- Adafruit NeoPixel @ 1.10.5
 |-- ESP32-BLE-Gamepad @ 0.5.0
-|   |-- NimBLE-Arduino @ 1.4.0
+|   |-- NimBLE-Arduino @ 2.0.0
+|-- FastLED @ 3.5.0
+|   |-- EspSoftwareSerial @ 6.13.2
+|   |-- SPI @ 2.0.0
 
 ```
 https://www.arduino.cc/reference/en/libraries/bolder-flight-systems-sbus/
-https://github.com/adafruit/Adafruit_NeoPixel
 https://github.com/lemmingDev/ESP32-BLE-Gamepad
-https://github.com/h2zero/NimBLE-Arduino
+https://github.com/h2zero/NimBLE-Arduino/tree/master
+https://github.com/FastLED/FastLED
 
 ### Parts used:
 
@@ -120,7 +122,7 @@ https://www.thingiverse.com/thing:5515977
 
 ### Limitation:
 
-it seems that the ESP32C3 is only able to "bond/pair" to ONE device and store the connection settings for this single device. If you connect to let's say a PC and later on you connect to another device, then the ESP32 gets stuck in during the bluetooth init phase. this seems to be an issue related to the NIMBLE bluetooth stack. this means you need to unpair/delete/forget the device BEFORE you connect it to another device. 
+it seems that the **ESP32C3** is only able to "bond/pair" to ONE device and store the connection settings for this single device. If you connect to let's say a PC and later on you connect to another device, then the ESP32 gets stuck in during the bluetooth init phase. this seems to be an issue related to the NIMBLE bluetooth stack. this means you need to unpair/delete/forget the device BEFORE you connect it to another device. 
 
 #### how to recover:
 if the device get stuck and doesn't boot, you need to "erase the flash" and reflash it via arduino or platform.io again:
