@@ -103,8 +103,11 @@ Check out and download/install these libraries (thanks to the contributors)
 
 ```
 https://www.arduino.cc/reference/en/libraries/bolder-flight-systems-sbus/
+
 https://github.com/lemmingDev/ESP32-BLE-Gamepad
+
 https://github.com/h2zero/NimBLE-Arduino/tree/master
+
 https://github.com/FastLED/FastLED
 
 ### Parts used:
