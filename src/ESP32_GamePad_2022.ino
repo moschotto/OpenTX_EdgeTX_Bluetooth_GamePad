@@ -14,23 +14,25 @@ The serial port and PINs must be defined accordingly
 In this case serial port 1 PINs 20 and 21 are used
 The LED is optional...
 
-Check out and download/install these libraries (thanks to the contributors)
+Check out and download these libraries (thanks to the contributors)
 
 |-- Bolder Flight Systems SBUS @ 7.0.0
-|-- Adafruit NeoPixel @ 1.10.5
 |-- ESP32-BLE-Gamepad @ 0.5.0
 |   |-- NimBLE-Arduino @ 1.4.0
+|-- FastLED @ 3.5.0
+|   |-- EspSoftwareSerial @ 6.13.2
+|   |-- SPI @ 2.0.0
 
 https://www.arduino.cc/reference/en/libraries/bolder-flight-systems-sbus/
-https://github.com/adafruit/Adafruit_NeoPixel
+https://github.com/FastLED/FastLED
 https://github.com/lemmingDev/ESP32-BLE-Gamepad
 https://github.com/h2zero/NimBLE-Arduino
 ################################################################################*/
 
 #include <Arduino.h>
-#include <Adafruit_NeoPixel.h>
 #include <BleGamepad.h>
 #include "sbus.h"
+#include <FastLED.h>
 
 #define RX_PIN 20
 #define TX_PIN 21
@@ -40,8 +42,8 @@ boolean debug_console = false;
 
 
 ////////////////////////////////////////////////////////////////////////////////
-//Neopixel object
-Adafruit_NeoPixel pixel(1, LED_PIN, NEO_GRB + NEO_KHZ800);
+//LEd object
+CRGB leds[1];
 
 ////////////////////////////////////////////////////////////////////////////////
 //BLE gamepad settings
@@ -76,10 +78,8 @@ void setup()
 
     delay(1000);
 
-
-
     //LED init
-    pixel.begin();
+    FastLED.addLeds<NEOPIXEL, LED_PIN>(leds, 1);
     LED_single_color("green");
     delay(1500);
 
@@ -214,52 +214,52 @@ void loop()
 
 void LED_blink(int cnt, String color, int delay_ms)
 {
-  pixel.setBrightness(255);
+  FastLED.setBrightness(255);
 
   for(int i=0;i<cnt;i++)
   {
 
-    if(color == "red") {pixel.setPixelColor(0, pixel.Color(255, 0,0));}
-    if(color == "green") {pixel.setPixelColor(0, pixel.Color(0,255,0));}
-    if(color == "blue") {pixel.setPixelColor(0, pixel.Color(0,0,255));}
+    if(color == "red") {leds[0] = CRGB::Red;}
+    if(color == "green") {leds[0] = CRGB::Green;}
+    if(color == "blue") {leds[0] = CRGB::Blue;}
 
-    pixel.show();
+    FastLED.show();
     delay(delay_ms);
 
-    pixel.setPixelColor(0, pixel.Color(0,0,0));
-    pixel.show();
+    leds[0] = CRGB::Black;
+    FastLED.show();
     delay(delay_ms);
   }
 }
 
 void LED_single_color(String color)
 {
-    pixel.setBrightness(255);
+    FastLED.setBrightness(255);
 
-    if(color == "red") {pixel.setPixelColor(0, pixel.Color(255, 0,0));}
-    if(color == "green") {pixel.setPixelColor(0, pixel.Color(0,255,0));}
-    if(color == "blue") {pixel.setPixelColor(0, pixel.Color(0,0,255));}
-    pixel.show();
+    if(color == "red") {leds[0] = CRGB::Red;}
+    if(color == "green") {leds[0] = CRGB::Green;}
+    if(color == "blue") {leds[0] = CRGB::Blue;}
+    FastLED.show();
 }
 
 void LED_pulse(String color)
 {
   for(int i=0;i<200;i++)
   {
-    if(color == "red") {pixel.setPixelColor(0, pixel.Color(255, 0,0));}
-    if(color == "green") {pixel.setPixelColor(0, pixel.Color(0,255,0));}
-    if(color == "blue") {pixel.setPixelColor(0, pixel.Color(0,0,255));}
-    pixel.setBrightness(i);
-    pixel.show();
+    if(color == "red") {leds[0] = CRGB::Red;}
+    if(color == "green") {leds[0] = CRGB::Green;}
+    if(color == "blue") {leds[0] = CRGB::Blue;}
+    FastLED.setBrightness(i);
+    FastLED.show();
     delay(5);
   }
   for(int i=200;i>0;i--)
   {
-    if(color == "red") {pixel.setPixelColor(0, pixel.Color(255, 0,0));}
-    if(color == "green") {pixel.setPixelColor(0, pixel.Color(0,255,0));}
-    if(color == "blue") {pixel.setPixelColor(0, pixel.Color(0,0,255));}
-    pixel.setBrightness(i);
-    pixel.show();
+    if(color == "red") {leds[0] = CRGB::Red;}
+    if(color == "green") {leds[0] = CRGB::Green;}
+    if(color == "blue") {leds[0] = CRGB::Blue;}
+    FastLED.setBrightness(i);
+    FastLED.show();
     delay(5);
   }
 }
