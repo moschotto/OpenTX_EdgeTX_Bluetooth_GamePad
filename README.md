@@ -96,7 +96,7 @@ Check out and download/install these libraries (thanks to the contributors)
 ```
 |-- Bolder Flight Systems SBUS @ 7.0.0
 |-- ESP32-BLE-Gamepad @ 0.5.0
-|   |-- NimBLE-Arduino @ 2.0.0
+|   |-- NimBLE-Arduino @ 1.4.0
 |-- FastLED @ 3.5.0
 |   |-- EspSoftwareSerial @ 6.13.2
 |   |-- SPI @ 2.0.0
@@ -106,7 +106,7 @@ https://www.arduino.cc/reference/en/libraries/bolder-flight-systems-sbus/
 
 https://github.com/lemmingDev/ESP32-BLE-Gamepad
 
-https://github.com/h2zero/NimBLE-Arduino/tree/master
+https://github.com/h2zero/NimBLE-Arduino
 
 https://github.com/FastLED/FastLED
 
